@@ -1,0 +1,1030 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04950DDA1B9ED910003CA2F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04950DD91B9ED910003CA2F0 /* AppDelegate.m */; };
+		04950DDC1B9ED910003CA2F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04950DDB1B9ED910003CA2F0 /* main.m */; };
+		04950DDF1B9ED910003CA2F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04950DDE1B9ED910003CA2F0 /* ViewController.m */; };
+		04950DE11B9ED910003CA2F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04950DE01B9ED910003CA2F0 /* Images.xcassets */; };
+		04950DE41B9ED910003CA2F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04950DE21B9ED910003CA2F0 /* Main.storyboard */; };
+		04950DF01B9ED910003CA2F0 /* UsageBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04950DEF1B9ED910003CA2F0 /* UsageBarDemoTests.m */; };
+		04950E031B9ED923003CA2F0 /* UsageBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 04950E021B9ED923003CA2F0 /* UsageBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04950E091B9ED923003CA2F0 /* UsageBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04950DFE1B9ED923003CA2F0 /* UsageBar.framework */; };
+		04950E121B9ED923003CA2F0 /* UsageBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04950E111B9ED923003CA2F0 /* UsageBarTests.m */; };
+		04950E151B9ED923003CA2F0 /* UsageBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04950DFE1B9ED923003CA2F0 /* UsageBar.framework */; };
+		04950E161B9ED923003CA2F0 /* UsageBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04950DFE1B9ED923003CA2F0 /* UsageBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04950E201B9ED9A5003CA2F0 /* MultiColorUsageBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 04950E1E1B9ED9A5003CA2F0 /* MultiColorUsageBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04950E211B9ED9A5003CA2F0 /* MultiColorUsageBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04950E1F1B9ED9A5003CA2F0 /* MultiColorUsageBar.m */; };
+		04C1DB1B1BA82BB000E7DFE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C1DB1A1BA82BB000E7DFE4 /* AppDelegate.m */; };
+		04C1DB1D1BA82BB000E7DFE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C1DB1C1BA82BB000E7DFE4 /* main.m */; };
+		04C1DB201BA82BB000E7DFE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C1DB1F1BA82BB000E7DFE4 /* ViewController.m */; };
+		04C1DB221BA82BB000E7DFE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C1DB211BA82BB000E7DFE4 /* Images.xcassets */; };
+		04C1DB251BA82BB000E7DFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C1DB231BA82BB000E7DFE4 /* Main.storyboard */; };
+		04C1DB311BA82BB000E7DFE4 /* DropBoxDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C1DB301BA82BB000E7DFE4 /* DropBoxDemoTests.m */; };
+		04C1DB381BA82DD800E7DFE4 /* UsageBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04950DFE1B9ED923003CA2F0 /* UsageBar.framework */; };
+		04C1DB3A1BA82E8D00E7DFE4 /* DropboxOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C1DB391BA82E8D00E7DFE4 /* DropboxOSX.framework */; };
+		04C1DB471BA8380E00E7DFE4 /* DropboxOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04C1DB391BA82E8D00E7DFE4 /* DropboxOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04950DEA1B9ED910003CA2F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04950DCB1B9ED910003CA2F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04950DD21B9ED910003CA2F0;
+			remoteInfo = UsageBarDemo;
+		};
+		04950E0A1B9ED923003CA2F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04950DCB1B9ED910003CA2F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04950DFD1B9ED923003CA2F0;
+			remoteInfo = UsageBar;
+		};
+		04950E0C1B9ED923003CA2F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04950DCB1B9ED910003CA2F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04950DD21B9ED910003CA2F0;
+			remoteInfo = UsageBarDemo;
+		};
+		04950E131B9ED923003CA2F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04950DCB1B9ED910003CA2F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04950DFD1B9ED923003CA2F0;
+			remoteInfo = UsageBar;
+		};
+		04C1DB2B1BA82BB000E7DFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04950DCB1B9ED910003CA2F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04C1DB141BA82BB000E7DFE4;
+			remoteInfo = DropBoxDemo;
+		};
+		04C1DB441BA8374600E7DFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04950DCB1B9ED910003CA2F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04950DFD1B9ED923003CA2F0;
+			remoteInfo = UsageBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04950E1A1B9ED923003CA2F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04950E161B9ED923003CA2F0 /* UsageBar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C1DB461BA837F700E7DFE4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04C1DB471BA8380E00E7DFE4 /* DropboxOSX.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04950DD31B9ED910003CA2F0 /* UsageBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsageBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04950DD71B9ED910003CA2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04950DD81B9ED910003CA2F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04950DD91B9ED910003CA2F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04950DDB1B9ED910003CA2F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04950DDD1B9ED910003CA2F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04950DDE1B9ED910003CA2F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04950DE01B9ED910003CA2F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04950DE31B9ED910003CA2F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04950DE91B9ED910003CA2F0 /* UsageBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsageBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04950DEE1B9ED910003CA2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04950DEF1B9ED910003CA2F0 /* UsageBarDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsageBarDemoTests.m; sourceTree = "<group>"; };
+		04950DFE1B9ED923003CA2F0 /* UsageBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UsageBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04950E011B9ED923003CA2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04950E021B9ED923003CA2F0 /* UsageBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsageBar.h; sourceTree = "<group>"; };
+		04950E081B9ED923003CA2F0 /* UsageBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsageBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04950E101B9ED923003CA2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04950E111B9ED923003CA2F0 /* UsageBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsageBarTests.m; sourceTree = "<group>"; };
+		04950E1E1B9ED9A5003CA2F0 /* MultiColorUsageBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiColorUsageBar.h; sourceTree = "<group>"; };
+		04950E1F1B9ED9A5003CA2F0 /* MultiColorUsageBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiColorUsageBar.m; sourceTree = "<group>"; };
+		04C1DB151BA82BB000E7DFE4 /* DropBoxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropBoxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C1DB181BA82BB000E7DFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C1DB191BA82BB000E7DFE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04C1DB1A1BA82BB000E7DFE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04C1DB1C1BA82BB000E7DFE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04C1DB1E1BA82BB000E7DFE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04C1DB1F1BA82BB000E7DFE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04C1DB211BA82BB000E7DFE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04C1DB241BA82BB000E7DFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04C1DB2A1BA82BB000E7DFE4 /* DropBoxDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropBoxDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C1DB2F1BA82BB000E7DFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C1DB301BA82BB000E7DFE4 /* DropBoxDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropBoxDemoTests.m; sourceTree = "<group>"; };
+		04C1DB391BA82E8D00E7DFE4 /* DropboxOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxOSX.framework; path = DropBoxDemo/DropboxOSX.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04950DD01B9ED910003CA2F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04950E151B9ED923003CA2F0 /* UsageBar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04950DE61B9ED910003CA2F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04950DFA1B9ED923003CA2F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04950E051B9ED923003CA2F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04950E091B9ED923003CA2F0 /* UsageBar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C1DB121BA82BB000E7DFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C1DB3A1BA82E8D00E7DFE4 /* DropboxOSX.framework in Frameworks */,
+				04C1DB381BA82DD800E7DFE4 /* UsageBar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C1DB271BA82BB000E7DFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04950DCA1B9ED910003CA2F0 = {
+			isa = PBXGroup;
+			children = (
+				04950DD51B9ED910003CA2F0 /* UsageBarDemo */,
+				04950DEC1B9ED910003CA2F0 /* UsageBarDemoTests */,
+				04950DFF1B9ED923003CA2F0 /* UsageBar */,
+				04950E0E1B9ED923003CA2F0 /* UsageBarTests */,
+				04C1DB161BA82BB000E7DFE4 /* DropBoxDemo */,
+				04C1DB2D1BA82BB000E7DFE4 /* DropBoxDemoTests */,
+				04C1DB431BA8364100E7DFE4 /* Frameworks */,
+				04950DD41B9ED910003CA2F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04950DD41B9ED910003CA2F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04950DD31B9ED910003CA2F0 /* UsageBarDemo.app */,
+				04950DE91B9ED910003CA2F0 /* UsageBarDemoTests.xctest */,
+				04950DFE1B9ED923003CA2F0 /* UsageBar.framework */,
+				04950E081B9ED923003CA2F0 /* UsageBarTests.xctest */,
+				04C1DB151BA82BB000E7DFE4 /* DropBoxDemo.app */,
+				04C1DB2A1BA82BB000E7DFE4 /* DropBoxDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04950DD51B9ED910003CA2F0 /* UsageBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04950DD81B9ED910003CA2F0 /* AppDelegate.h */,
+				04950DD91B9ED910003CA2F0 /* AppDelegate.m */,
+				04950DDD1B9ED910003CA2F0 /* ViewController.h */,
+				04950DDE1B9ED910003CA2F0 /* ViewController.m */,
+				04950DE01B9ED910003CA2F0 /* Images.xcassets */,
+				04950DE21B9ED910003CA2F0 /* Main.storyboard */,
+				04950DD61B9ED910003CA2F0 /* Supporting Files */,
+			);
+			path = UsageBarDemo;
+			sourceTree = "<group>";
+		};
+		04950DD61B9ED910003CA2F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04950DD71B9ED910003CA2F0 /* Info.plist */,
+				04950DDB1B9ED910003CA2F0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04950DEC1B9ED910003CA2F0 /* UsageBarDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				04950DEF1B9ED910003CA2F0 /* UsageBarDemoTests.m */,
+				04950DED1B9ED910003CA2F0 /* Supporting Files */,
+			);
+			path = UsageBarDemoTests;
+			sourceTree = "<group>";
+		};
+		04950DED1B9ED910003CA2F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04950DEE1B9ED910003CA2F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04950DFF1B9ED923003CA2F0 /* UsageBar */ = {
+			isa = PBXGroup;
+			children = (
+				04950E021B9ED923003CA2F0 /* UsageBar.h */,
+				04950E001B9ED923003CA2F0 /* Supporting Files */,
+				04950E1E1B9ED9A5003CA2F0 /* MultiColorUsageBar.h */,
+				04950E1F1B9ED9A5003CA2F0 /* MultiColorUsageBar.m */,
+			);
+			path = UsageBar;
+			sourceTree = "<group>";
+		};
+		04950E001B9ED923003CA2F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04950E011B9ED923003CA2F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04950E0E1B9ED923003CA2F0 /* UsageBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				04950E111B9ED923003CA2F0 /* UsageBarTests.m */,
+				04950E0F1B9ED923003CA2F0 /* Supporting Files */,
+			);
+			path = UsageBarTests;
+			sourceTree = "<group>";
+		};
+		04950E0F1B9ED923003CA2F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04950E101B9ED923003CA2F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04C1DB161BA82BB000E7DFE4 /* DropBoxDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04C1DB191BA82BB000E7DFE4 /* AppDelegate.h */,
+				04C1DB1A1BA82BB000E7DFE4 /* AppDelegate.m */,
+				04C1DB1E1BA82BB000E7DFE4 /* ViewController.h */,
+				04C1DB1F1BA82BB000E7DFE4 /* ViewController.m */,
+				04C1DB211BA82BB000E7DFE4 /* Images.xcassets */,
+				04C1DB231BA82BB000E7DFE4 /* Main.storyboard */,
+				04C1DB171BA82BB000E7DFE4 /* Supporting Files */,
+			);
+			path = DropBoxDemo;
+			sourceTree = "<group>";
+		};
+		04C1DB171BA82BB000E7DFE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04C1DB181BA82BB000E7DFE4 /* Info.plist */,
+				04C1DB1C1BA82BB000E7DFE4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04C1DB2D1BA82BB000E7DFE4 /* DropBoxDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				04C1DB301BA82BB000E7DFE4 /* DropBoxDemoTests.m */,
+				04C1DB2E1BA82BB000E7DFE4 /* Supporting Files */,
+			);
+			path = DropBoxDemoTests;
+			sourceTree = "<group>";
+		};
+		04C1DB2E1BA82BB000E7DFE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04C1DB2F1BA82BB000E7DFE4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04C1DB431BA8364100E7DFE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C1DB391BA82E8D00E7DFE4 /* DropboxOSX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04950DFB1B9ED923003CA2F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04950E031B9ED923003CA2F0 /* UsageBar.h in Headers */,
+				04950E201B9ED9A5003CA2F0 /* MultiColorUsageBar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04950DD21B9ED910003CA2F0 /* UsageBarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04950DF31B9ED910003CA2F0 /* Build configuration list for PBXNativeTarget "UsageBarDemo" */;
+			buildPhases = (
+				04950DCF1B9ED910003CA2F0 /* Sources */,
+				04950DD01B9ED910003CA2F0 /* Frameworks */,
+				04950DD11B9ED910003CA2F0 /* Resources */,
+				04950E1A1B9ED923003CA2F0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04950E141B9ED923003CA2F0 /* PBXTargetDependency */,
+			);
+			name = UsageBarDemo;
+			productName = UsageBarDemo;
+			productReference = 04950DD31B9ED910003CA2F0 /* UsageBarDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04950DE81B9ED910003CA2F0 /* UsageBarDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04950DF61B9ED910003CA2F0 /* Build configuration list for PBXNativeTarget "UsageBarDemoTests" */;
+			buildPhases = (
+				04950DE51B9ED910003CA2F0 /* Sources */,
+				04950DE61B9ED910003CA2F0 /* Frameworks */,
+				04950DE71B9ED910003CA2F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04950DEB1B9ED910003CA2F0 /* PBXTargetDependency */,
+			);
+			name = UsageBarDemoTests;
+			productName = UsageBarDemoTests;
+			productReference = 04950DE91B9ED910003CA2F0 /* UsageBarDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04950DFD1B9ED923003CA2F0 /* UsageBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04950E171B9ED923003CA2F0 /* Build configuration list for PBXNativeTarget "UsageBar" */;
+			buildPhases = (
+				04950DF91B9ED923003CA2F0 /* Sources */,
+				04950DFA1B9ED923003CA2F0 /* Frameworks */,
+				04950DFB1B9ED923003CA2F0 /* Headers */,
+				04950DFC1B9ED923003CA2F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UsageBar;
+			productName = UsageBar;
+			productReference = 04950DFE1B9ED923003CA2F0 /* UsageBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		04950E071B9ED923003CA2F0 /* UsageBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04950E1B1B9ED923003CA2F0 /* Build configuration list for PBXNativeTarget "UsageBarTests" */;
+			buildPhases = (
+				04950E041B9ED923003CA2F0 /* Sources */,
+				04950E051B9ED923003CA2F0 /* Frameworks */,
+				04950E061B9ED923003CA2F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04950E0B1B9ED923003CA2F0 /* PBXTargetDependency */,
+				04950E0D1B9ED923003CA2F0 /* PBXTargetDependency */,
+			);
+			name = UsageBarTests;
+			productName = UsageBarTests;
+			productReference = 04950E081B9ED923003CA2F0 /* UsageBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04C1DB141BA82BB000E7DFE4 /* DropBoxDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C1DB321BA82BB000E7DFE4 /* Build configuration list for PBXNativeTarget "DropBoxDemo" */;
+			buildPhases = (
+				04C1DB111BA82BB000E7DFE4 /* Sources */,
+				04C1DB121BA82BB000E7DFE4 /* Frameworks */,
+				04C1DB131BA82BB000E7DFE4 /* Resources */,
+				04C1DB461BA837F700E7DFE4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C1DB451BA8374600E7DFE4 /* PBXTargetDependency */,
+			);
+			name = DropBoxDemo;
+			productName = DropBoxDemo;
+			productReference = 04C1DB151BA82BB000E7DFE4 /* DropBoxDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04C1DB291BA82BB000E7DFE4 /* DropBoxDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C1DB351BA82BB000E7DFE4 /* Build configuration list for PBXNativeTarget "DropBoxDemoTests" */;
+			buildPhases = (
+				04C1DB261BA82BB000E7DFE4 /* Sources */,
+				04C1DB271BA82BB000E7DFE4 /* Frameworks */,
+				04C1DB281BA82BB000E7DFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C1DB2C1BA82BB000E7DFE4 /* PBXTargetDependency */,
+			);
+			name = DropBoxDemoTests;
+			productName = DropBoxDemoTests;
+			productReference = 04C1DB2A1BA82BB000E7DFE4 /* DropBoxDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04950DCB1B9ED910003CA2F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = One.com;
+				TargetAttributes = {
+					04950DD21B9ED910003CA2F0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					04950DE81B9ED910003CA2F0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 04950DD21B9ED910003CA2F0;
+					};
+					04950DFD1B9ED923003CA2F0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					04950E071B9ED923003CA2F0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 04950DD21B9ED910003CA2F0;
+					};
+					04C1DB141BA82BB000E7DFE4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					04C1DB291BA82BB000E7DFE4 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 04C1DB141BA82BB000E7DFE4;
+					};
+				};
+			};
+			buildConfigurationList = 04950DCE1B9ED910003CA2F0 /* Build configuration list for PBXProject "UsageBarDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04950DCA1B9ED910003CA2F0;
+			productRefGroup = 04950DD41B9ED910003CA2F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04950DD21B9ED910003CA2F0 /* UsageBarDemo */,
+				04950DE81B9ED910003CA2F0 /* UsageBarDemoTests */,
+				04950DFD1B9ED923003CA2F0 /* UsageBar */,
+				04950E071B9ED923003CA2F0 /* UsageBarTests */,
+				04C1DB141BA82BB000E7DFE4 /* DropBoxDemo */,
+				04C1DB291BA82BB000E7DFE4 /* DropBoxDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04950DD11B9ED910003CA2F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04950DE11B9ED910003CA2F0 /* Images.xcassets in Resources */,
+				04950DE41B9ED910003CA2F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04950DE71B9ED910003CA2F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04950DFC1B9ED923003CA2F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04950E061B9ED923003CA2F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C1DB131BA82BB000E7DFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C1DB221BA82BB000E7DFE4 /* Images.xcassets in Resources */,
+				04C1DB251BA82BB000E7DFE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C1DB281BA82BB000E7DFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04950DCF1B9ED910003CA2F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04950DDF1B9ED910003CA2F0 /* ViewController.m in Sources */,
+				04950DDC1B9ED910003CA2F0 /* main.m in Sources */,
+				04950DDA1B9ED910003CA2F0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04950DE51B9ED910003CA2F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04950DF01B9ED910003CA2F0 /* UsageBarDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04950DF91B9ED923003CA2F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04950E211B9ED9A5003CA2F0 /* MultiColorUsageBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04950E041B9ED923003CA2F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04950E121B9ED923003CA2F0 /* UsageBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C1DB111BA82BB000E7DFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C1DB201BA82BB000E7DFE4 /* ViewController.m in Sources */,
+				04C1DB1D1BA82BB000E7DFE4 /* main.m in Sources */,
+				04C1DB1B1BA82BB000E7DFE4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C1DB261BA82BB000E7DFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C1DB311BA82BB000E7DFE4 /* DropBoxDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04950DEB1B9ED910003CA2F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04950DD21B9ED910003CA2F0 /* UsageBarDemo */;
+			targetProxy = 04950DEA1B9ED910003CA2F0 /* PBXContainerItemProxy */;
+		};
+		04950E0B1B9ED923003CA2F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04950DFD1B9ED923003CA2F0 /* UsageBar */;
+			targetProxy = 04950E0A1B9ED923003CA2F0 /* PBXContainerItemProxy */;
+		};
+		04950E0D1B9ED923003CA2F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04950DD21B9ED910003CA2F0 /* UsageBarDemo */;
+			targetProxy = 04950E0C1B9ED923003CA2F0 /* PBXContainerItemProxy */;
+		};
+		04950E141B9ED923003CA2F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04950DFD1B9ED923003CA2F0 /* UsageBar */;
+			targetProxy = 04950E131B9ED923003CA2F0 /* PBXContainerItemProxy */;
+		};
+		04C1DB2C1BA82BB000E7DFE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04C1DB141BA82BB000E7DFE4 /* DropBoxDemo */;
+			targetProxy = 04C1DB2B1BA82BB000E7DFE4 /* PBXContainerItemProxy */;
+		};
+		04C1DB451BA8374600E7DFE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04950DFD1B9ED923003CA2F0 /* UsageBar */;
+			targetProxy = 04C1DB441BA8374600E7DFE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04950DE21B9ED910003CA2F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04950DE31B9ED910003CA2F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04C1DB231BA82BB000E7DFE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C1DB241BA82BB000E7DFE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04950DF11B9ED910003CA2F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		04950DF21B9ED910003CA2F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		04950DF41B9ED910003CA2F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UsageBarDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04950DF51B9ED910003CA2F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UsageBarDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04950DF71B9ED910003CA2F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UsageBarDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsageBarDemo.app/Contents/MacOS/UsageBarDemo";
+			};
+			name = Debug;
+		};
+		04950DF81B9ED910003CA2F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UsageBarDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsageBarDemo.app/Contents/MacOS/UsageBarDemo";
+			};
+			name = Release;
+		};
+		04950E181B9ED923003CA2F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UsageBar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		04950E191B9ED923003CA2F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = UsageBar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		04950E1C1B9ED923003CA2F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UsageBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsageBarDemo.app/Contents/MacOS/UsageBarDemo";
+			};
+			name = Debug;
+		};
+		04950E1D1B9ED923003CA2F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UsageBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsageBarDemo.app/Contents/MacOS/UsageBarDemo";
+			};
+			name = Release;
+		};
+		04C1DB331BA82BB000E7DFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DropBoxDemo",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DropBoxDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04C1DB341BA82BB000E7DFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DropBoxDemo",
+				);
+				INFOPLIST_FILE = DropBoxDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04C1DB361BA82BB000E7DFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DropBoxDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DropBoxDemo.app/Contents/MacOS/DropBoxDemo";
+			};
+			name = Debug;
+		};
+		04C1DB371BA82BB000E7DFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DropBoxDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DropBoxDemo.app/Contents/MacOS/DropBoxDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04950DCE1B9ED910003CA2F0 /* Build configuration list for PBXProject "UsageBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04950DF11B9ED910003CA2F0 /* Debug */,
+				04950DF21B9ED910003CA2F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04950DF31B9ED910003CA2F0 /* Build configuration list for PBXNativeTarget "UsageBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04950DF41B9ED910003CA2F0 /* Debug */,
+				04950DF51B9ED910003CA2F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04950DF61B9ED910003CA2F0 /* Build configuration list for PBXNativeTarget "UsageBarDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04950DF71B9ED910003CA2F0 /* Debug */,
+				04950DF81B9ED910003CA2F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04950E171B9ED923003CA2F0 /* Build configuration list for PBXNativeTarget "UsageBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04950E181B9ED923003CA2F0 /* Debug */,
+				04950E191B9ED923003CA2F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04950E1B1B9ED923003CA2F0 /* Build configuration list for PBXNativeTarget "UsageBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04950E1C1B9ED923003CA2F0 /* Debug */,
+				04950E1D1B9ED923003CA2F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C1DB321BA82BB000E7DFE4 /* Build configuration list for PBXNativeTarget "DropBoxDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C1DB331BA82BB000E7DFE4 /* Debug */,
+				04C1DB341BA82BB000E7DFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04C1DB351BA82BB000E7DFE4 /* Build configuration list for PBXNativeTarget "DropBoxDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C1DB361BA82BB000E7DFE4 /* Debug */,
+				04C1DB371BA82BB000E7DFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04950DCB1B9ED910003CA2F0 /* Project object */;
+}
