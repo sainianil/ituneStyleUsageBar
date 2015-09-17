@@ -3,11 +3,15 @@
 UsageBar is a framework which display data in multicolor usage bar similar to iTune. Similar library is available in swift for iOS https://github.com/prine/ROStorageBar
 so I wrote in Objectiv-C with NSBezierPath for OSX.
 
+![alt text](https://github.com/sainianil/ituneStyleUsageBar/blob/master/snapshot.png "Usage Bar Snapshot")
+
+
 #How to use?
 - Add NSView on UI from XIB
 - Change the class of NSView to UsageBar from XIB
 - Create IBOutlet in ViewController
 - Set the value of following properties from XIB
+```objective-c
 /* delegate: tooltip delegate is responsible for providing tool tip string.*/
 @property(assign) id <MultiColorUsageBarToolTipDelegate> delegate;
 
@@ -67,11 +71,12 @@ so I wrote in Objectiv-C with NSBezierPath for OSX.
 /* isRoundedCornerBar: If YES, displays usage bar with rounded corners, if NO- displays rectangle usage bar */
 @property (nonatomic) IBInspectable BOOL isRoundedCornerBar;
 
-/* roundedCornerRadious: If isRoundedCornerBar = YES, provide the radius for rounded corners but it should be less than or equal to the height of usage bar */
+/* roundedCornerRadius: If isRoundedCornerBar = YES, provide the radius for rounded corners but it should be less than or equal to the height of usage bar */
 @property (nonatomic) IBInspectable float roundedCornerRadius;
-
+```
 - Write following code to draw the Usage Bar
 
+```objective-c
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -86,5 +91,6 @@ so I wrote in Objectiv-C with NSBezierPath for OSX.
     
     [multiClrUsageBar drawUsageBar];
 }
+```
 
-#Sample demos are added in the respository for the reference
+<I>Sample demos are added in the respository for the reference</I>
