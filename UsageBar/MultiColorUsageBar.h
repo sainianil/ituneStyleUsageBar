@@ -45,9 +45,13 @@ IB_DESIGNABLE
 /* borderWidth: Usage Bar border color, set it from IB */
 @property (nonatomic) IBInspectable float borderWidth;
 
-/* isCategoryTitle: Set YES if you want to display category name in the usage bar, 
+/* isCenterCategoryTitle: Set YES if you want to display category name in the center of usage bar,
  No- if you don't want to display category name in the usage bar */
-@property (nonatomic) IBInspectable BOOL isCategoryTitle;
+@property (nonatomic) IBInspectable BOOL isCenterCategoryTitle;
+
+/* isBelowCategoryTitle: Set YES if you want to display category name in the bottom of usage bar,
+ No- if you don't want to display category name in the usage bar */
+@property (nonatomic) IBInspectable BOOL isBelowCategoryTitle;
 
 /* categoryFontSize: Font size of category Name, , set it from IB */
 @property (nonatomic) IBInspectable double categoryFontSize;

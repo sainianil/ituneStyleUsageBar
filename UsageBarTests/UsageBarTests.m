@@ -89,7 +89,7 @@
     XCTAssertEqualObjects([mClrUsageBar usageUnit], usageUnit, @"Usage unit is not default!");
     XCTAssertEqual([mClrUsageBar isRoundedCornerBar], isRoundedCornerBar, @"isRoundedCornerBar is not default!");
     XCTAssertEqual([mClrUsageBar roundedCornerRadius], roundedCornerRadius, @"roundedCornerRadious is not default!");
-    XCTAssertEqual([mClrUsageBar isCategoryTitle], isCategoryTitle, @"isCategoryTitle is not default!");
+    XCTAssertEqual([mClrUsageBar isCenterCategoryTitle], isCategoryTitle, @"isCategoryTitle is not default!");
     XCTAssertEqual([mClrUsageBar isCategoryToolTip], isCategoryToolTip, @"isCategoryToolTip is not default!");
 }
 
@@ -132,8 +132,8 @@
     XCTAssertEqual([mClrUsageBar isRoundedCornerBar], isRoundedCornerBar, @"isRoundedCornerBar is not matching!");
     [mClrUsageBar setRoundedCornerRadius:roundedCornerRadius];
     XCTAssertEqual([mClrUsageBar roundedCornerRadius], roundedCornerRadius, @"roundedCornerRadious is not matching!");\
-    [mClrUsageBar setIsCategoryTitle:isCategoryTitle];
-    XCTAssertEqual([mClrUsageBar isCategoryTitle], isCategoryTitle, @"isCategoryTitle is not matching!");
+    [mClrUsageBar setIsCenterCategoryTitle:isCategoryTitle];
+    XCTAssertEqual([mClrUsageBar isCenterCategoryTitle], isCategoryTitle, @"isCategoryTitle is not matching!");
     [mClrUsageBar setIsCategoryToolTip:isCategoryToolTip];
     XCTAssertEqual([mClrUsageBar isCategoryToolTip], isCategoryToolTip, @"isCategoryToolTip is not matching!");
 }

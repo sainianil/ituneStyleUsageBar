@@ -81,7 +81,8 @@
 @synthesize categoryFontName;
 @synthesize isRoundedCornerBar;
 @synthesize roundedCornerRadius;
-@synthesize isCategoryTitle;
+@synthesize isCenterCategoryTitle;
+@synthesize isBelowCategoryTitle;
 @synthesize isCategoryToolTip;
 @synthesize delegate;
 
@@ -148,7 +149,8 @@
     self.usageUnit = @"GB";
     self.isRoundedCornerBar = YES;
     self.roundedCornerRadius = 10.0;
-    self.isCategoryTitle = YES;
+    self.isCenterCategoryTitle = YES;
+    self.isBelowCategoryTitle = NO;
     self.isCategoryToolTip = YES;
 }
 
@@ -206,25 +208,51 @@
         [path stroke];
         [NSGraphicsContext restoreGraphicsState];
         
-        //Draw title
-        if (isCategoryTitle)
-        {
-            NSFont *font = [NSFont fontWithName:self.categoryFontName size:self.categoryFontSize];
-            if (font==nil) {
-                font = [NSFont fontWithName:@"Helvetica Bold" size:10.0];
-            }
-            NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-            [paragraphStyle setParagraphStyle:[NSParagraphStyle defaultParagraphStyle]];
-            [paragraphStyle setAlignment:self.categoryAlignment];
-            
-            NSDictionary *textAttribute = [NSDictionary dictionaryWithObjects:@[font, self.categoryTextColor, paragraphStyle] forKeys:@[NSFontAttributeName, NSForegroundColorAttributeName, NSParagraphStyleAttributeName]];
-            NSSize txtSize = [mClrUsgBarValue.categoryName sizeWithAttributes:textAttribute];
-            paragraphStyle = nil;
-            
-            NSRect titlePositionRect = NSMakeRect(rect.origin.x + self.leftCategoryPadding - (2 * self.rightCategoryPadding), rect.origin.y + (rect.size.height - txtSize.height)/2.0, rect.size.width, txtSize.height);
-            [mClrUsgBarValue.categoryName drawInRect:titlePositionRect withAttributes:textAttribute];
-        }
+        [self drawTitle:mClrUsgBarValue];
     }
+}
+
+- (void)drawTitle:(MultiColorUsageBarValue*)mClrUsgBarValue
+{
+    //Draw title
+    NSRect rect = mClrUsgBarValue.rect;
+    NSFont *font = [NSFont fontWithName:self.categoryFontName size:self.categoryFontSize];
+    if (font==nil) {
+        font = [NSFont fontWithName:@"Helvetica Bold" size:10.0];
+    }
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setParagraphStyle:[NSParagraphStyle defaultParagraphStyle]];
+    [paragraphStyle setAlignment:self.categoryAlignment];
+    
+    if (self.isBelowCategoryTitle)
+    {
+        [paragraphStyle setAlignment:NSLeftTextAlignment];
+    }
+    
+    NSDictionary *textAttribute = [NSDictionary dictionaryWithObjects:@[font, self.categoryTextColor, paragraphStyle] forKeys:@[NSFontAttributeName, NSForegroundColorAttributeName, NSParagraphStyleAttributeName]];
+    NSSize txtSize = [mClrUsgBarValue.categoryName sizeWithAttributes:textAttribute];
+    NSRect titlePositionRect = NSZeroRect;
+    
+    if (self.isCenterCategoryTitle)
+    {
+        titlePositionRect = NSMakeRect(rect.origin.x + self.leftCategoryPadding - (2 * self.rightCategoryPadding), rect.origin.y + (rect.size.height - txtSize.height)/2.0, rect.size.width, txtSize.height);
+    }
+    else if(self.isBelowCategoryTitle)
+    {
+        float txtPadding = 10.0;
+        NSRect titleRect = NSMakeRect(rect.origin.x + self.leftCategoryPadding - (2 * self.rightCategoryPadding), rect.origin.y - 2*txtPadding, txtPadding, txtPadding);
+        NSBezierPath *titlePath = [NSBezierPath bezierPathWithRect:titleRect];
+        [mClrUsgBarValue.color set];
+        [titlePath fill];
+        
+        titlePositionRect = NSMakeRect(titleRect.origin.x + titleRect.size.width + txtPadding, titleRect.origin.y, rect.size.width - titleRect.size.width, txtSize.height);
+    }
+    
+    [mClrUsgBarValue.categoryName drawInRect:titlePositionRect withAttributes:textAttribute];
+    
+    paragraphStyle = nil;
+    textAttribute = nil;
 }
 
 - (void)drawLeftRoundedRect:(NSBezierPath*)path forRect:(NSRect)rect
@@ -278,12 +306,17 @@
     {
         float currentX = self.borderWidth;
         double scale = 1.0;
+        float height = self.bounds.size.height - 2 * self.borderWidth;
+        
         if (self.totalSpace > 0)
         {
             scale = (self.bounds.size.width - 2 * self.borderWidth) / self.totalSpace;
         }
         
-        float height = self.bounds.size.height - 2 * self.borderWidth;
+        if (self.isBelowCategoryTitle)
+        {
+            height /= 2.0;
+        }
         
         //float widthAdj = 0;
         
@@ -303,7 +336,7 @@
              } */
             
             //Draw rect
-            NSRect rect = NSMakeRect(currentX, self.borderWidth, width, height);
+            NSRect rect = NSMakeRect(currentX, self.bounds.origin.y + self.bounds.size.height/2, width, height);
             [mClrUsgBarValue setRect:rect];
             if (self.isCategoryToolTip)
             {
