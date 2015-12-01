@@ -225,11 +225,6 @@
     [paragraphStyle setParagraphStyle:[NSParagraphStyle defaultParagraphStyle]];
     [paragraphStyle setAlignment:self.categoryAlignment];
     
-    if (self.isBelowCategoryTitle)
-    {
-        [paragraphStyle setAlignment:NSLeftTextAlignment];
-    }
-    
     NSDictionary *textAttribute = [NSDictionary dictionaryWithObjects:@[font, self.categoryTextColor, paragraphStyle] forKeys:@[NSFontAttributeName, NSForegroundColorAttributeName, NSParagraphStyleAttributeName]];
     NSSize txtSize = [mClrUsgBarValue.categoryName sizeWithAttributes:textAttribute];
     NSRect titlePositionRect = NSZeroRect;
@@ -237,19 +232,21 @@
     if (self.isCenterCategoryTitle)
     {
         titlePositionRect = NSMakeRect(rect.origin.x + self.leftCategoryPadding - (2 * self.rightCategoryPadding), rect.origin.y + (rect.size.height - txtSize.height)/2.0, rect.size.width, txtSize.height);
+        [mClrUsgBarValue.categoryName drawInRect:titlePositionRect withAttributes:textAttribute];
     }
-    else if(self.isBelowCategoryTitle)
+    
+    if(self.isBelowCategoryTitle)
     {
         float txtPadding = 10.0;
-        NSRect titleRect = NSMakeRect(rect.origin.x + self.leftCategoryPadding - (2 * self.rightCategoryPadding), rect.origin.y - 2*txtPadding, txtPadding, txtPadding);
+        [paragraphStyle setAlignment:NSLeftTextAlignment];
+        NSRect titleRect = NSMakeRect(rect.origin.x + self.leftCategoryPadding - (2 * self.rightCategoryPadding), rect.origin.y - rect.size.height - 2.0, txtPadding, txtPadding);
         NSBezierPath *titlePath = [NSBezierPath bezierPathWithRect:titleRect];
         [mClrUsgBarValue.color set];
         [titlePath fill];
         
         titlePositionRect = NSMakeRect(titleRect.origin.x + titleRect.size.width + txtPadding, titleRect.origin.y, rect.size.width - titleRect.size.width, txtSize.height);
+        [mClrUsgBarValue.categoryName drawInRect:titlePositionRect withAttributes:textAttribute];
     }
-    
-    [mClrUsgBarValue.categoryName drawInRect:titlePositionRect withAttributes:textAttribute];
     
     paragraphStyle = nil;
     textAttribute = nil;
@@ -307,7 +304,7 @@
         float currentX = self.borderWidth;
         double scale = 1.0;
         float height = self.bounds.size.height - 2 * self.borderWidth;
-        
+        float yPosAdj = 0.0;
         if (self.totalSpace > 0)
         {
             scale = (self.bounds.size.width - 2 * self.borderWidth) / self.totalSpace;
@@ -316,8 +313,8 @@
         if (self.isBelowCategoryTitle)
         {
             height /= 2.0;
+            yPosAdj = self.bounds.size.height/2.0;
         }
-        
         //float widthAdj = 0;
         
         for(MultiColorUsageBarValue *mClrUsgBarValue in multiColorUsageBarValues)
@@ -336,7 +333,8 @@
              } */
             
             //Draw rect
-            NSRect rect = NSMakeRect(currentX, self.bounds.origin.y + self.bounds.size.height/2, width, height);
+            
+            NSRect rect = NSMakeRect(currentX, self.bounds.origin.y + yPosAdj, width, height);
             [mClrUsgBarValue setRect:rect];
             if (self.isCategoryToolTip)
             {
