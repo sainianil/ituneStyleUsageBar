@@ -171,44 +171,51 @@
     
     for(MultiColorUsageBarValue *mClrUsgBarValue in multiColorUsageBarValues)
     {
-        NSRect rect = mClrUsgBarValue.rect;
-        
-        [NSGraphicsContext saveGraphicsState];
-        NSBezierPath *path = [NSBezierPath bezierPath];
-        
-        if(isRoundedCornerBar && [multiColorUsageBarValues count] == 1)
+        //Nothing to draw if usageValue is less than or equal to 0
+        if (mClrUsgBarValue.usageValue > 0)
         {
-            path = [NSBezierPath bezierPathWithRoundedRect:rect xRadius:self.roundedCornerRadius yRadius:self.roundedCornerRadius];
-        }
-        else if (isRoundedCornerBar && [mClrUsgBarValue isEqualTo:[multiColorUsageBarValues objectAtIndex:0]])
-        {
-            //radius should not be greater than bar height
-            if (self.roundedCornerRadius > rect.size.height)
+            
+            NSRect rect = mClrUsgBarValue.rect;
+            
+            //Save graphics context
+            [NSGraphicsContext saveGraphicsState];
+            NSBezierPath *path = [NSBezierPath bezierPath];
+            
+            //Either usage value of any category equal to total space or only one category is there i.e we need to draw just single category
+            if( mClrUsgBarValue.usageValue == totalSpace || (isRoundedCornerBar && [multiColorUsageBarValues count] == 1))
             {
-                self.roundedCornerRadius = rect.size.height;
+                path = [NSBezierPath bezierPathWithRoundedRect:rect xRadius:self.roundedCornerRadius yRadius:self.roundedCornerRadius];
             }
-            [self drawLeftRoundedRect:path forRect:mClrUsgBarValue.rect];
+            else if (isRoundedCornerBar && [mClrUsgBarValue isEqualTo:[multiColorUsageBarValues objectAtIndex:0]])
+            {
+                //radius should not be greater than bar height
+                if (self.roundedCornerRadius > rect.size.height)
+                {
+                    self.roundedCornerRadius = rect.size.height;
+                }
+                [self drawLeftRoundedRect:path forRect:mClrUsgBarValue.rect];
+            }
+            else if (isRoundedCornerBar && [mClrUsgBarValue isEqualTo:[multiColorUsageBarValues objectAtIndex:[multiColorUsageBarValues count] - 1]])
+            {
+                [self drawRightRoundedRect:path forRect:rect];
+            }
+            else
+            {
+                path = [NSBezierPath bezierPathWithRect:rect];
+            }
+            
+            [mClrUsgBarValue.color set];
+            [path fill];
+            
+            //Draw rect border
+            [self.borderColor set];
+            //Set border width
+            path.lineWidth = self.borderWidth;
+            [path stroke];
+            [NSGraphicsContext restoreGraphicsState];
+            
+            [self drawTitle:mClrUsgBarValue];
         }
-        else if (isRoundedCornerBar && [mClrUsgBarValue isEqualTo:[multiColorUsageBarValues objectAtIndex:[multiColorUsageBarValues count] - 1]])
-        {
-            [self drawRightRoundedRect:path forRect:rect];
-        }
-        else
-        {
-            path = [NSBezierPath bezierPathWithRect:rect];
-        }
-        
-        [mClrUsgBarValue.color set];
-        [path fill];
-        
-        //Draw rect border
-        [self.borderColor set];
-        //Set border width
-        path.lineWidth = self.borderWidth;
-        [path stroke];
-        [NSGraphicsContext restoreGraphicsState];
-        
-        [self drawTitle:mClrUsgBarValue];
     }
 }
 

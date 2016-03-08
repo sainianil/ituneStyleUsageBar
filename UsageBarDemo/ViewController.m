@@ -10,6 +10,8 @@
 #import <UsageBar/UsageBar.h>
 
 @interface ViewController()
+
+//In IB set UIView class to MultiColorUsageBar and create a IBOutlet
 @property (weak) IBOutlet MultiColorUsageBar *multiClrUsageBar;
 
 @end
@@ -24,13 +26,14 @@
     self.view.wantsLayer = YES;
     self.view.layer.backgroundColor = [NSColor whiteColor].CGColor;
     
+    //add category to be displayed in the storage bar
     [multiClrUsageBar addUsageValue:4.0 categoryName:@"Music" color:[NSColor cyanColor]];
-    [multiClrUsageBar addUsageValue:2.0 categoryName:@"Apps" color:[NSColor greenColor]];
+    [multiClrUsageBar addUsageValue:6.0 categoryName:@"Apps" color:[NSColor greenColor]];
     [multiClrUsageBar addUsageValue:3.0 categoryName:@"Videos" color:[NSColor orangeColor]];
-    [multiClrUsageBar addUsageValue:1.0 categoryName:@"Free" color:[NSColor grayColor]];
+    [multiClrUsageBar addUsageValue:2.0 categoryName:@"Free" color:[NSColor grayColor]];
     
+    //Draw usage bar
     [multiClrUsageBar drawUsageBar];
-    //[multiClrUsageBar setNeedsDisplay:YES];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
