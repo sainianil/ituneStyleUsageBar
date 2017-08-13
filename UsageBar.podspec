@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "UsageBar"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "iTune style multicolor usage bar."
 
   # This description is used to generate tags and improve search results.
@@ -56,10 +56,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Anil Saini" => "anil@one.com" }
+  s.author             = { "Anil Saini" => "anni_saini@yahoo.com" }
   # Or just: s.author    = "Anil Saini"
-  # s.authors            = { "Anil Saini" => "anil@one.com" }
-  # s.social_media_url   = "http://twitter.com/Anil Saini"
+  # s.authors            = { "Anil Saini" => "anni_saini@yahoo.com" }
+  # s.social_media_url   = ""
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
