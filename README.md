@@ -5,8 +5,19 @@ so I wrote in Objectiv-C with NSBezierPath for OSX.
 
 ![alt text](https://github.com/sainianil/ituneStyleUsageBar/blob/master/snapshot.png "Usage Bar Snapshot")
 
+# Pod support available
 
-#How to use?
+```ruby
+platform :osx, '10.10'
+
+target 'Project Target' do
+
+pod 'UsageBar'
+
+end
+```
+
+# How to use?
 - Add NSView on UI from XIB
 - Change the class of NSView to UsageBar from XIB
 - Create IBOutlet in ViewController
